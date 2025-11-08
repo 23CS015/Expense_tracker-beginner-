@@ -65,7 +65,29 @@ secrets.*
 *.pyo
 *.pyd
 
-# Misc
+# Node.js / React Frontend
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+package-lock.json
+.npm
+.yarn/cache
+.yarn/unplugged
+.yarn/build-state.yml
+.yarn/install-state.gz
+.pnp.*
+
+# React Build
+frontend/app/build/
+frontend/app/dist/
+*.tsbuildinfo
+
+# React / Vite specific
+.vite/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+# Misc
 tmp/
 temp/

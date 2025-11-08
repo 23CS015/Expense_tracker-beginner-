@@ -1,0 +1,134 @@
+/* Recent Expenses Section */
+.recent-expenses {
+  background: white;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.recent-expenses:hover {
+  box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.15);
+  transform: translateY(-2px);
+}
+
+.recent-expenses h3 {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin: 0 0 1rem 0;
+}
+
+.expenses-content {
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+}
+
+.empty-state {
+  color: #9ca3af;
+  text-align: center;
+  margin: auto;
+  font-size: 0.875rem;
+}
+
+.expenses-list {
+  flex: 1;
+  margin-bottom: 1rem;
+}
+
+.expense-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.75rem;
+  border-bottom: 1px solid #f3f4f6;
+  color: #374151;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  border-radius: 0.375rem;
+  margin-bottom: 0.25rem;
+}
+
+.expense-item:last-child {
+  border-bottom: none;
+}
+
+.expense-item:hover {
+  background-color: #f9fafb;
+  transform: translateX(4px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+.expense-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  flex: 1;
+}
+
+.expense-title {
+  font-weight: 500;
+  font-size: 0.875rem;
+  color: #1f2937;
+}
+
+.expense-meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.expense-category {
+  font-size: 0.75rem;
+  color: #6b7280;
+}
+
+.expense-date {
+  font-size: 0.75rem;
+  color: #9ca3af;
+  font-weight: 400;
+}
+
+.expense-amount {
+  font-weight: 600;
+  color: #1f2937;
+}
+
+/* Add New Expense Button */
+.add-expense-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  width: 100%;
+  background-color: #4F46E5;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.375rem;
+  font-size: 0.875rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: auto;
+  transform: scale(1);
+}
+
+.add-expense-btn:hover {
+  background-color: #4338CA;
+  transform: scale(1.02);
+  box-shadow: 0 4px 12px rgba(79, 70, 229, 0.4);
+}
+
+.add-expense-btn:active {
+  transform: scale(0.98);
+}
+
+.btn-icon {
+  font-size: 1rem;
+  transition: transform 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.add-expense-btn:hover .btn-icon {
+  transform: rotate(90deg);
+}
