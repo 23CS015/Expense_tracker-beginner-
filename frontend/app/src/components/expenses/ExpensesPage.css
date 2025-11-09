@@ -1,0 +1,84 @@
+.expenses-page {
+  padding: 2rem;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+.expenses-header {
+  margin-bottom: 2rem;
+}
+
+.expenses-header h2 {
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.expenses-subtitle {
+  margin: 0;
+  font-size: 1rem;
+  color: var(--text-secondary);
+}
+
+.expenses-layout {
+  display: grid;
+  grid-template-columns: 300px 1fr;
+  gap: 2rem;
+  height: calc(100vh - 200px);
+}
+
+/* Sidebar Styles */
+.expenses-sidebar {
+  background: white;
+  border-radius: 12px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  border: 1px solid rgba(0, 0, 0, 0.05);
+  height: fit-content;
+  position: sticky;
+  top: 2rem;
+}
+
+/* Main Content Area */
+.expenses-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  min-height: 0; /* Allow content to shrink */
+}
+
+/* Responsive Design */
+@media (max-width: 1024px) {
+  .expenses-layout {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .expenses-sidebar {
+    position: static;
+    order: 2;
+  }
+
+  .expenses-main {
+    order: 1;
+  }
+}
+
+@media (max-width: 768px) {
+  .expenses-page {
+    padding: 1rem;
+  }
+
+  .expenses-header h2 {
+    font-size: 1.75rem;
+  }
+
+  .expenses-layout {
+    gap: 1rem;
+  }
+
+  .expenses-sidebar {
+    padding: 1rem;
+  }
+}
